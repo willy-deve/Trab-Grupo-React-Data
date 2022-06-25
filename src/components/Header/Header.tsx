@@ -81,8 +81,12 @@ const Header = () => {
               </Button>
             </Box>
 
-            <FacebookIcon sx={{ fontSize: 30, mr: 1 }} />
-            <InstagramIcon sx={{ fontSize: 30, mr: 5 }} />
+            <FacebookIcon
+              sx={{ fontSize: 30, mr: 1, display: { xs: 'none', md: 'block' } }}
+            />
+            <InstagramIcon
+              sx={{ fontSize: 30, mr: 5, display: { xs: 'none', md: 'block' } }}
+            />
           </Toolbar>
         </Container>
       </AppBar>
