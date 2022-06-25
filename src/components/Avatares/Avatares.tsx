@@ -9,7 +9,7 @@ import Willy from '../../assets/image/willy.jpg'
 const Avatares = () => {
   return (
     <div>
-      <Typography variant="h4" align="center" sx={{ mt: 10 }}>
+      <Typography variant="h4" align="center" sx={{ mt: 10 }} id="Squad">
         {' '}
         Meet our SQUAD
       </Typography>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
 import Toolbar from '@mui/material/Toolbar'
@@ -37,6 +38,10 @@ function scrollx() {
   document.querySelector('#Products')?.scrollIntoView()
 }
 
+function squad() {
+  document.querySelector('#Squad')?.scrollIntoView()
+}
+
 const Header = () => {
   const [open, setOpen] = React.useState(false)
   const handleOpen = () => setOpen(true)
@@ -62,7 +67,10 @@ const Header = () => {
                 PRODUCTS
               </Button>
 
-              <Button sx={{ my: 2, color: 'white', display: 'block' }}>
+              <Button
+                sx={{ my: 2, color: 'white', display: 'block' }}
+                onClick={squad}
+              >
                 SQUAD
               </Button>
               <Button
