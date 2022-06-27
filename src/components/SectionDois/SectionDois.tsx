@@ -9,8 +9,9 @@ import img3 from '../../assets/image/web3.png'
 
 const SectionDois = () => {
   return (
-    <Box sx={{ flexGrow: 1, marginTop: 20 }} id="Products">
-      <Grid container spacing={2}>
+    // <Box sx={{ flexGrow: 1, marginTop: 10, marginX: 10 }}>
+    <Box sx={{ flexGrow: 1, marginTop: 10, paddingX: 5 }}>
+      <Grid container spacing={4}>
         <Grid item xs={12} md={4}>
           <Paper
             elevation={4}
@@ -22,11 +23,8 @@ const SectionDois = () => {
               flexDirection: 'column',
             }}
           >
-            <img src={img1} alt="" width="300px" height="300px" />
-            <Typography variant="h4" sx={{ mt: 2, mb: 3 }}>
-              Machine Learning
-            </Typography>
-            <Typography>
+            <img src={img1} alt="" width="280px" height="280px" />
+            <Typography sx={{ paddingTop: 5 }}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
               quasi voluptatum officiis. Quo alias molestias sapiente voluptate
               magnam a omnis, voluptatibus, facere repellat similique neque.
@@ -45,11 +43,8 @@ const SectionDois = () => {
               flexDirection: 'column',
             }}
           >
-            <img src={img2} alt="" width="300px" height="300px" />
-            <Typography variant="h4" sx={{ mt: 2, mb: 3 }}>
-              Manage Analytics
-            </Typography>
-            <Typography>
+            <img src={img2} alt="" width="280px" height="280px" />
+            <Typography sx={{ paddingTop: 5 }}>
               {' '}
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
               quasi voluptatum officiis. Quo alias molestias sapiente voluptate
@@ -69,11 +64,8 @@ const SectionDois = () => {
               flexDirection: 'column',
             }}
           >
-            <img src={img3} alt="" width="300px" height="300px" />
-            <Typography variant="h4" sx={{ mt: 2, mb: 3 }}>
-              Business Intelligence
-            </Typography>
-            <Typography>
+            <img src={img3} alt="" width="280px" height="280px" />
+            <Typography sx={{ paddingTop: 5 }}>
               {' '}
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
               quasi voluptatum officiis. Quo alias molestias sapiente voluptate

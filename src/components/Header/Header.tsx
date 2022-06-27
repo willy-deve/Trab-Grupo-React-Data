@@ -52,10 +52,10 @@ const Header = () => {
 
   return (
     <>
-      <AppBar position="static">
+      <AppBar position="static" color="primary">
         <Container maxWidth="xl">
           <Toolbar disableGutters>
-            <Box sx={{ display: { xs: 'flex', md: 'block' }, mr: 1 }}>
+            <Box sx={{ display: { xs: 'flex', md: 'block' }, mr: 3 }}>
               <img src={Logo} alt="logo" height="50" width="150" />
             </Box>
 

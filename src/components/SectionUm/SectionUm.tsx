@@ -1,5 +1,6 @@
-import { Grid, Typography } from '@mui/material'
-import { Container } from '@mui/system'
+import { AddBox } from '@mui/icons-material'
+import { Box, Grid, Typography } from '@mui/material'
+import { Container, fontWeight } from '@mui/system'
 import * as React from 'react'
 import styled from 'styled-components'
 import img1 from '../../assets/image/img1.png'
@@ -26,9 +27,9 @@ export const SectionUm = () => {
               height: 500,
             }}
           >
-            <Typography variant="h2">
+            <Typography variant="h2" color="primary" sx={{ fontWeight: 500 }}>
               {' '}
-              We are expert in Data Science e Analytics{' '}
+              We are expert in Data Science & Analytics{' '}
             </Typography>
             <Typography
               variant="h5"
@@ -36,6 +37,7 @@ export const SectionUm = () => {
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
+                paddingTop: 2,
               }}
             >
               {' '}
@@ -45,8 +47,8 @@ export const SectionUm = () => {
               voluptate?{' '}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={6}>
-            <img src={img1} alt="" height="540" />
+          <Grid item xs={10} md={6}>
+            <img src={img1} alt="" height="500" />
           </Grid>
         </Grid>
       </Container>

@@ -2,16 +2,29 @@ import * as React from 'react'
 import Avatar from '@mui/material/Avatar'
 import Stack from '@mui/material/Stack'
 import { Container, Grid, Typography } from '@mui/material'
+import styled from 'styled-components'
 import Andre from '../../assets/image/andre.jpg'
-import Sammille from '../../assets/image/sam.jpg'
+import Samille from '../../assets/image/sam.jpg'
 import Willy from '../../assets/image/willy.jpg'
+
+const AvataresStyled = styled.div`
+  background-color: #f89920;
+  min-height: 500px;
+  text-align: center;
+`
 
 const Avatares = () => {
   return (
-    <div>
-      <Typography variant="h4" align="center" sx={{ mt: 20 }} id="Squad">
+    <AvataresStyled>
+      <Typography
+        variant="h4"
+        color="white"
+        align="center"
+        sx={{ mt: 20, pt: 5, fontWeight: 500 }}
+        id="Squad"
+      >
         {' '}
-        Meet our SQUAD
+        MEET OUR SQUAD
       </Typography>
 
       <Container sx={{ mt: 5 }}>
@@ -22,7 +35,13 @@ const Avatares = () => {
             md={4}
             sx={{ display: 'flex', justifyContent: 'center' }}
           >
-            <img src={Andre} alt="aa" style={{ borderRadius: 200 }} />
+            <img
+              src={Andre}
+              alt="aa"
+              width="300"
+              height="300"
+              style={{ borderRadius: 200 }}
+            />
           </Grid>
 
           <Grid
@@ -32,9 +51,9 @@ const Avatares = () => {
             sx={{ display: 'flex', justifyContent: 'center' }}
           >
             <img
-              src={Sammille}
+              src={Samille}
               alt="ss"
-              height="330"
+              height="300"
               style={{ borderRadius: 200 }}
             />
           </Grid>
@@ -47,7 +66,7 @@ const Avatares = () => {
             <img
               src={Willy}
               alt="ww"
-              height="330"
+              height="300"
               style={{
                 borderRadius: 200,
                 border: 15,
@@ -63,7 +82,7 @@ const Avatares = () => {
         <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
         <Avatar alt="Cindy Baker" src="/static/images/avatar/3.jpg" />
       </Stack> */}
-    </div>
+    </AvataresStyled>
   )
 }
 
