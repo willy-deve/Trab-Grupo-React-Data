@@ -8,6 +8,41 @@ import img1 from '../../assets/image/img1.png'
 const SectionUmStyled = styled.div`
   width: 100%;
   height: 50%;
+
+  img {
+    animation: image 4.5s linear infinite both;
+  }
+
+  @keyframes image {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    41.99% {
+      opacity: 1;
+    }
+    42% {
+      opacity: 0;
+    }
+    43% {
+      opacity: 0;
+    }
+    43.01% {
+      opacity: 1;
+    }
+    47.99% {
+      opacity: 1;
+    }
+    48% {
+      opacity: 0;
+    }
+    49% {
+      opacity: 0;
+    }
+    49.01% {
+      opacity: 1;
+    }
+  }
 `
 
 export const SectionUm = () => {
@@ -17,7 +52,7 @@ export const SectionUm = () => {
         <Grid container spacing={2}>
           <Grid
             item
-            xs={12}
+            xs={6}
             md={6}
             sx={{
               display: 'flex',
@@ -47,7 +82,7 @@ export const SectionUm = () => {
               voluptate?{' '}
             </Typography>
           </Grid>
-          <Grid item xs={10} md={6}>
+          <Grid item xs={6} md={6}>
             <img src={img1} alt="" height="500" />
           </Grid>
         </Grid>

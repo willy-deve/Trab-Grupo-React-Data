@@ -11,6 +11,22 @@ const AvataresStyled = styled.div`
   background-color: #f89920;
   min-height: 500px;
   text-align: center;
+
+  img {
+    animation: flip 2.5s ease-in-out infinite both;
+  }
+
+  @keyframes flip {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 `
 
 const Avatares = () => {
